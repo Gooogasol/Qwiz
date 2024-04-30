@@ -59,7 +59,6 @@ function create_result(){
     let div_finish = document.querySelector('.finish')
     let div_test = document.querySelector('.card_qw')
     let btn_start = document.querySelector('.btn_start')
-    let btn_start_again = document.querySelector('btn_start_again')
     btn_start.addEventListener('click',()=>{
         div_start.style.display = 'none'
         div_finish.style.display = 'none'
@@ -70,10 +69,6 @@ function create_result(){
         div_finish.style.display = 'flex'
     }, 30000);
 })
-    btn_start_again.addEventListener('click',()=>{
-        div_finish.style.display = 'none'
-        div_test.style.display = 'flex'
-    })
 //
 
 // send e-mail
