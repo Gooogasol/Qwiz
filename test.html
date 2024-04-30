@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang='uk'>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <link rel="stylesheet" href="style.css">
+        <title>Квіз</title>
+        <link rel="shortcut icon" src="genetic-algorithm-svgrepo-com.svg" type="image/x-icon">
+    </head>
+    <body>
+        <div class="start">
+            <button class="btn_start">
+                {Start}
+            </button>
+        </div>
+        <div class="card_qw">
+            <div class="qw"><p class="better">1+1</p></div>
+            <div class="ans">
+                <div>23</div>
+                <div>11</div>
+                <div>2</div>
+                <div>3</div>
+                <div>0</div>
+            </div>
+        </div>
+        <div class="finish">
+            <h1>Ваші результати:</h1>
+            <button class="btn_start_again">
+                {Rewind}
+            </button>
+            <div class="reverse">
+                <input type="text" id="text" placeholder="Ваше ім'я">
+                <input type="email" id="email" placeholder="Ваша почта">
+                <button class="btn_send">
+                    Send E-mail
+                </button>
+            </div>
+        </div>
+        <script type="module" src="javasc.js"></script>
+        <script src='https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js'></script>
+        <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+           emailjs.init({
+             publicKey: "XFmqPwflkJTwazsIF",
+           });
+        })();
+     </script>
+    </body>
+</html>
