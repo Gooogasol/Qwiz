@@ -77,7 +77,7 @@ function send_email(){
     let template_id = "template_f0ls96h"
     let user_name = document.getElementById('text').value
     let user_mail = document.getElementById('email').value
-    let params = {message: `Hello ${user_name}`,
+    let params = {message: `Hello\n ${user_name} \nВсього питань: ${qws.count} \nПравильні відповіді: ${qws.correct_count} \nУспішність: ${Math.round((qws.correct_count/qws.count)*100)}%`,
     e_mail: `${user_mail}`}
     emailjs.send(service_id,template_id,params).then(response =>{
         alert('Результат успішно надісланий.')
